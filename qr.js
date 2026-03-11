@@ -1,9 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 
-// after hosting, pass:
-// qr.html?target=https://your-site.netlify.app/gift.html
+// GitHub Pages deployment URL
 const targetUrl =
-  params.get("target") || "https://your-site.netlify.app/gift.html";
+  params.get("target") ||
+  "https://annorfrancis545-art.github.io/BIRTHDAY-ART/gift.html";
 
 new QRCode(document.getElementById("qrcode"), {
   text: targetUrl,
