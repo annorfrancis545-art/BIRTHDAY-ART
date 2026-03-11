@@ -5,6 +5,8 @@ const targetUrl =
   params.get("target") ||
   "https://annorfrancis545-art.github.io/BIRTHDAY-ART/gift.html";
 
+console.log("QR Code Target URL:", targetUrl);
+
 new QRCode(document.getElementById("qrcode"), {
   text: targetUrl,
   width: 256,
@@ -12,4 +14,9 @@ new QRCode(document.getElementById("qrcode"), {
   colorDark: "#111111",
   colorLight: "#ffffff",
   correctLevel: QRCode.CorrectLevel.H,
+});
+
+// Add click to test functionality
+document.getElementById("qrcode").addEventListener("click", () => {
+  window.open(targetUrl, "_blank");
 });
