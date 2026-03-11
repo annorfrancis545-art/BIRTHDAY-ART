@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday My Love ❤</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="matrix-bg" id="matrixBg"></div>
+    <div class="stars"></div>
+    <div class="sparkles" id="sparkles"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="audio/intro.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="app">
+      <!-- Intro tap screen -->
+      <section class="screen active" id="screen-start">
+        <div class="center-card intro-card">
+          <div class="intro-heart">❤</div>
+          <h1>Tap to Open Your Birthday Gift</h1>
+          <p>A little surprise made with love.</p>
+          <button class="primary-btn" id="openGiftBtn">Open Gift</button>
+          <small>Best with sound on</small>
+        </div>
+      </section>
+
+      <!-- Countdown -->
+      <section class="screen" id="screen-countdown">
+        <div class="countdown-wrap">
+          <div class="big-count" id="countNumber">3</div>
+        </div>
+      </section>
+
+      <!-- Happy birthday text -->
+      <section class="screen" id="screen-title">
+        <div class="headline-stack">
+          <div class="headline">HAPPY</div>
+          <div class="headline">BIRTHDAY</div>
+          <div class="headline">TO</div>
+          <div class="headline heart-line">SERWAA❤</div>
+        </div>
+      </section>
+
+      <!-- Gift opening -->
+      <section class="screen" id="screen-giftbox">
+        <div class="gift-scene">
+          <div class="gift-box" id="giftBox">
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+            <div class="gift-ribbon-v"></div>
+            <div class="gift-ribbon-h"></div>
+            <div class="gift-bow bow-left"></div>
+            <div class="gift-bow bow-right"></div>
+          </div>
+          <button class="primary-btn" id="unwrapBtn">Unwrap ❤</button>
+        </div>
+      </section>
+
+      <!-- Slideshow -->
+      <section class="screen" id="screen-slideshow">
+        <div class="glass-card">
+          <div class="birthday-bar">Happy Birthday, My Love ❤</div>
+          <div class="photo-frame">
+            <img id="slideImage" src="images/pic1.jpeg" alt="Birthday photo" />
+          </div>
+          <div class="dots" id="dots"></div>
+        </div>
+      </section>
+
+      <!-- Typed note -->
+      <section class="screen" id="screen-letter">
+        <div class="glass-card letter-card">
+          <div class="mini-top">A Letter For You ❤</div>
+          <h2>My Birthday Message</h2>
+          <p id="typedText" class="typed-text"></p>
+          <button class="secondary-btn" id="nextToVideoBtn">
+            Watch Our Memories
+          </button>
+        </div>
+      </section>
+
+      <!-- Video memories -->
+      <section class="screen" id="screen-video">
+        <div class="glass-card">
+          <div class="birthday-bar">Our Beautiful Memories ❤</div>
+          <div class="video-frame">
+            <video id="memoryVideo" controls preload="metadata">
+              <source src="videos/memories.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button class="secondary-btn" id="nextToHeartBtn">
+            One More Surprise
+          </button>
+        </div>
+      </section>
+
+      <!-- Heart collage -->
+      <section class="screen" id="screen-heart">
+        <div class="center-heart-wrap">
+          <div class="photo-heart" id="photoHeart">
+            <img src="images/pic1.jpeg" class="heart-photo p1" alt="" />
+            <img src="images/pic2.png" class="heart-photo p2" alt="" />
+            <img src="images/pic3.png" class="heart-photo p3" alt="" />
+            <img src="images/cover.jpeg" class="heart-photo p4" alt="" />
+            <img src="images/pic1.jpeg" class="heart-photo p5" alt="" />
+            <img src="images/pic2.png" class="heart-photo p6" alt="" />
+            <img src="images/pic3.png" class="heart-photo p7" alt="" />
+            <img src="images/cover.jpeg" class="heart-photo p8" alt="" />
+            <img src="images/pic1.jpeg" class="heart-photo p9" alt="" />
+          </div>
+
+          <div class="final-note">
+            You are loved, celebrated, and deeply appreciated. Happy Birthday,
+            beautiful ❤
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="gift.js"></script>
+    <!-- Debug script - comment out after testing -->
+    <script src="debug.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scan My Heart</title>
+    <link rel="stylesheet" href="qr.css" />
+  </head>
+  <body>
+    <div class="qr-stars"></div>
+
+    <main class="qr-wrap">
+      <div class="qr-card">
+        <div class="heart-shell">
+          <div class="heart-glow"></div>
+          <div class="heart-frame">
+            <div id="qrcode"></div>
+            <div class="heart-center">❤</div>
+          </div>
+        </div>
+
+        <h1>Scan to Open Your Surprise ❤</h1>
+        <p class="hint">Point your camera here and open the birthday gift.</p>
+
+        <div class="tiny-note">Best viewed on mobile after scanning.</div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="qr.js"></script>
+  </body>
+</html>
